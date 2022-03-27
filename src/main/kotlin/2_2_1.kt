@@ -5,8 +5,6 @@ fun main(args: Array<String>) {
     WallService.add(Post(1, 220322, "Заметка3"))
     WallService.add(Post(1, 230322, "Заметка4"))
 
-
-
     WallService.update(Post(3, 30, "0000000"))
 }
 
