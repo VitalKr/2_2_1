@@ -1,5 +1,6 @@
-data class AttachmentVideo(val video: Video) : Attachment("video") {
-    data class Video(
+ data class AttachmentVideo(val video: Video, override val type: String = "video")
+     : Attachment {
+     class Video(
         val id: Int,
         val albumId: Int,
         val ownerId: Int,
