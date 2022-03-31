@@ -1,4 +1,4 @@
-data class AttachmentPhoto(val video: Photo) : Attachment("photo") {
+data class AttachmentPhoto(val photo: Photo) : Attachment("photo") {
     data class Photo(
         val id: Int,
         val albumId: Int,
