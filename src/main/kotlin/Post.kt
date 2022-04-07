@@ -1,6 +1,6 @@
 data class Post(
     val id: Int = 0,
-//    val ownerId: Int,
+    val ownerId: Int,
 //    val fromId: Int,
 //    val createdBy: Int,
     val date: Int,
