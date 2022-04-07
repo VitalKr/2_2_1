@@ -1,5 +1,7 @@
 object WallService {
     private var posts = emptyArray<Post>()
+    private var comments = emptyArray<Comment>()
+
     fun add(post: Post): Post {
         //  posts += post
         val id = posts.lastIndex + 1
@@ -22,5 +24,12 @@ object WallService {
             }
         }
         return false
+    }
+
+    fun createComment(comment: Comment, post: Post) {
+        for ((index, post) in posts.withIndex()) {
+            if (comment.postID == post.id)
+                TODO()
+        }
     }
 }
