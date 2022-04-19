@@ -31,10 +31,12 @@ object WallService {
         return false
     }
 
-    fun createComment(comment: Comment, post: Post) {
-        for ((index, post) in posts.withIndex()) {
-            if (comment.postID == post.id)
-                TODO()
+    fun createComment(comment: Comment) {
+        for (post in posts) {
+            if (comment.postID == post.id){
+                comments += comment
+            }
+            else { java.lang.RuntimeException ("PostNotFoundException")}
         }
     }
 }

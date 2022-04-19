@@ -6,6 +6,8 @@ fun main(args: Array<String>) {
     WallService.add(Post(1, 4,230322, "Заметка4",null, null,null,null))
 
     WallService.update(Post(3, 2,30, "0000000",null, null,null,null))
+
+    WallService.createComment(Comment(2,3,4,"Комментарий1","ее", ))
 }
 
 
