@@ -17,10 +17,10 @@ data class Post(
 //    val markedAsAds: Boolean,
 //    val isFavorite: Boolean,
 //    val postponedId: Boolean
-//    val comments: Comments,
-//    val likes: Likes,
-//    val reposts: Reposts,
-//    val views: Views
+    val comments: Comments ?,
+    val likes: Likes ?,
+    val reposts: Reposts ?,
+    val views: Views ?
 ) {
     data class Comments(
         val count: Int,
