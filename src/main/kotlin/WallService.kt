@@ -36,10 +36,10 @@ object WallService {
 
     fun createComment(comment: Comment):Boolean {
         for (post in posts) {
-            println(post.id)
+        //    println(post.id)
             if (post.id == comment.postID) {
                 comments += comment
-                println("коммент")
+
                 return true
             }
         }
