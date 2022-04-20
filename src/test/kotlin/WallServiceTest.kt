@@ -24,8 +24,7 @@ class WallServiceTest {
         val update = Post(2, 2, 2,"11111111",null, null,null,null)
 
         
-        // создаём информацию об обновлении
-        val update = Post(2, 2, 2,"11111111")
+
 
         // выполняем целевое действие
         val result = service.update(update)
