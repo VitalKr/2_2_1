@@ -7,7 +7,10 @@ fun main(args: Array<String>) {
 
     WallService.update(Post(3, 2,30, "0000000",null, null,null,null))
 
-    WallService.createComment(Comment(2,3,4,"Комментарий1","ее", ))
+    WallService.createComment(Comment(2,4,4,"Комментарий1",
+        AttachmentPhoto(AttachmentPhoto.Photo(1, 2, 3, 4)), 24, 25))
+
+
 }
 
 

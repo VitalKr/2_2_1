@@ -31,12 +31,15 @@ object WallService {
         return false
     }
 
-    fun createComment(comment: Comment) {
+    fun createComment(comment: Comment):Boolean {
         for (post in posts) {
-            if (comment.postID == post.id){
+            println(post.id)
+            if (post.id == comment.postID) {
                 comments += comment
+                println("коммент")
+                return true
             }
-            else { java.lang.RuntimeException ("PostNotFoundException")}
         }
+        throw PostNotFoundException("PostNotFoundException")
     }
 }
